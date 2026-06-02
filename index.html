@@ -242,4 +242,552 @@ footer{border-top:1px solid var(--border);padding:36px 52px;display:flex;justify
   #hero,section{padding:80px 22px;}
   #hero{padding-top:100px;}
   .srv-grid{grid-template-columns:1fr;}
-  .srv-card.wide{grid-column:sp
+  .srv-card.wide{grid-column:span 1;}
+  .srv-card.wide{display:flex;flex-direction:column;gap:20px;}
+  .srv-card.wide .srv-features{grid-template-columns:1fr;}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:44px;}
+  h1{font-size:clamp(2.5rem,11vw,4rem);}
+  footer{padding:28px 22px;flex-direction:column;text-align:center;}
+  body{cursor:auto;}
+  #cur,#cur2{display:none;}
+  .form-row{grid-template-columns:1fr;}
+  .modal-body{padding:8px 22px 36px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sb" id="sb"></div>
+<div id="cur"></div>
+<div id="cur2"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-brand">
+    <div class="nav-brand-icon">NS</div>
+    <span class="nav-brand-name">Nomena<span>.</span>Services</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-open">
+    <span class="open-dot"></span>
+    <span>Ouvert tous les jours</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Solutions Digitales · Madagascar</div>
+    <div class="hero-name">Nomena Services</div>
+    <h1>
+      Dev <span class="fire">Web</span><br>
+      <span class="outline">&amp;</span> Design<br>
+      Créatif
+    </h1>
+    <p class="hero-sub">
+      Développeur web · Designer graphique · Technicien informatique<br>
+      Musique digitale & solutions réseau sur mesure.
+    </p>
+    <div class="hero-open-banner">
+      <span class="open-dot"></span>
+      <span>Disponible & ouvert tous les jours de la semaine</span>
+    </div>
+    <div class="hero-cta">
+      <a href="https://wa.me/261341391434?text=Bonjour%20Nomena%2C%20j'aimerais%20discuter%20d'un%20projet%20avec%20vous." class="btn-wa" target="_blank" rel="noopener">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Direct
+      </a>
+      <a href="mailto:nomenamino79@gmail.com?subject=Demande%20de%20projet&body=Bonjour%20Nomena%2C%0A%0AJe%20voudrais%20vous%20contacter%20pour%20un%20projet%20de%20%3A%0A%0ADescription%20%3A%0A%0AMerci." class="btn-mail">
+        <svg class="mail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Email Direct
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq-wrap">
+  <div class="mq-inner">
+    <div class="mq-item"><span class="mq-dot">◈</span>Développement Web</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Design Graphique</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Montage Vidéo</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Maintenance Info</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Windows · Linux</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Réseau & Wi-Fi</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>FL Studio</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Identité Visuelle</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Développement Web</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Design Graphique</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Montage Vidéo</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Maintenance Info</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Windows · Linux</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Réseau & Wi-Fi</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>FL Studio</div>
+    <div class="mq-item"><span class="mq-dot">◈</span>Identité Visuelle</div>
+  </div>
+</div>
+
+<!-- SERVICES GRID -->
+<section id="services">
+  <div class="srv-header reveal">
+    <div>
+      <div class="sec-label">Nomena Services</div>
+      <h2>Mes<br>Services</h2>
+    </div>
+    <p>Cliquez sur chaque carte pour découvrir les détails et tarifs de chaque service.</p>
+  </div>
+
+  <div class="srv-grid">
+
+    <!-- 1 Web -->
+    <div class="srv-card reveal" style="--card-accent:#ff4500;" onclick="openModal('web')">
+      <span class="srv-num">01</span>
+      <div class="srv-icon-wrap">💻</div>
+      <h3>Développement Web</h3>
+      <p>Sites vitrines, applications web et e-commerce sur mesure. Code propre, rapide, responsive.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">HTML/CSS</span>
+        <span class="srv-tag">JavaScript</span>
+        <span class="srv-tag">PHP</span>
+        <span class="srv-tag">WordPress</span>
+      </div>
+      <div class="srv-click">Voir les détails</div>
+    </div>
+
+    <!-- 2 Design -->
+    <div class="srv-card reveal" style="--card-accent:#a855f7;" onclick="openModal('design')">
+      <span class="srv-num">02</span>
+      <div class="srv-icon-wrap">🎨</div>
+      <h3>Design Graphique</h3>
+      <p>Logos, chartes graphiques, affiches et identités visuelles percutantes pour votre marque.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">Logo</span>
+        <span class="srv-tag">Charte</span>
+        <span class="srv-tag">Photoshop</span>
+        <span class="srv-tag">Illustrator</span>
+      </div>
+      <div class="srv-click">Voir les détails</div>
+    </div>
+
+    <!-- 3 Vidéo -->
+    <div class="srv-card reveal" style="--card-accent:#f59e0b;" onclick="openModal('video')">
+      <span class="srv-num">03</span>
+      <div class="srv-icon-wrap">🎬</div>
+      <h3>Montage & Vidéo</h3>
+      <p>Montage pro, motion design, intros/outros et publicités vidéo pour vos réseaux sociaux.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">Montage</span>
+        <span class="srv-tag">Motion</span>
+        <span class="srv-tag">After Effects</span>
+        <span class="srv-tag">Premiere</span>
+      </div>
+      <div class="srv-click">Voir les détails</div>
+    </div>
+
+    <!-- 4 Maintenance -->
+    <div class="srv-card reveal" style="--card-accent:#22c55e;" onclick="openModal('maintenance')">
+      <span class="srv-num">04</span>
+      <div class="srv-icon-wrap">🖥️</div>
+      <h3>Maintenance Info</h3>
+      <p>Diagnostic, réparation et optimisation de votre matériel. Intervention rapide à domicile.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">Diagnostic</span>
+        <span class="srv-tag">Réparation</span>
+        <span class="srv-tag">Nettoyage</span>
+        <span class="srv-tag">Optimisation</span>
+      </div>
+      <div class="srv-click">Voir les détails</div>
+    </div>
+
+    <!-- 5 Réseau -->
+    <div class="srv-card reveal" style="--card-accent:#00d4ff;" onclick="openModal('reseau')">
+      <span class="srv-num">05</span>
+      <div class="srv-icon-wrap">🌐</div>
+      <h3>Réseau & Systèmes</h3>
+      <p>Installation réseau, Wi-Fi, configuration Windows & Linux. Environnements stables et sécurisés.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">Wi-Fi</span>
+        <span class="srv-tag">Windows</span>
+        <span class="srv-tag">Linux</span>
+        <span class="srv-tag">Sécurité</span>
+      </div>
+      <div class="srv-click">Voir les détails</div>
+    </div>
+
+    <!-- 6 FL Studio -->
+    <div class="srv-card reveal" style="--card-accent:#ec4899;" onclick="openModal('fl')">
+      <span class="srv-num">06</span>
+      <div class="srv-icon-wrap">🎵</div>
+      <h3>FL Studio & Musique</h3>
+      <p>Création d'instruments, beatmaking et production musicale digitale sur FL Studio.</p>
+      <div class="srv-tags">
+        <span class="srv-tag">FL Studio</span>
+        <span class="srv-tag">Beatmaking</span>
+        <span class="srv-tag">Instruments</span>
+        <span class="srv-tag">Mixage</span>
+      </div>
+      <div class="srv-click">Voir les détails</div>
+    </div>
+
+    <!-- 7 Wide — Pack Complet -->
+    <div class="srv-card wide reveal" style="--card-accent:#ff4500;" onclick="openModal('pack')">
+      <div>
+        <span class="srv-num">07</span>
+        <div class="srv-icon-wrap">🚀</div>
+        <h3>Pack Complet — Lancement Digital</h3>
+        <p>Tout ce qu'il faut pour lancer votre activité en ligne : site web + logo + carte de visite + réseaux sociaux. Solution clé en main, livrée rapidement.</p>
+        <div class="srv-click" style="opacity:1;transform:none;">Découvrir le pack →</div>
+      </div>
+      <div class="srv-right">
+        <div class="srv-features">
+          <div class="srv-feature">Site web complet</div>
+          <div class="srv-feature">Logo professionnel</div>
+          <div class="srv-feature">Carte de visite</div>
+          <div class="srv-feature">Profil réseaux sociaux</div>
+          <div class="srv-feature">Bannières & visuels</div>
+          <div class="srv-feature">Support 30 jours</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal">
+      <div class="about-card">
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:28px;">
+          <div class="avail-badge"><span class="open-dot"></span>Disponible maintenant</div>
+          <div class="open-days">📅 Ouvert 7j/7</div>
+        </div>
+        <div class="about-name">Nomena</div>
+        <div class="about-role">Développeur · Designer · Technicien — Madagascar</div>
+        <div class="about-stats">
+          <div class="stat-box"><div class="stat-n">7+</div><div class="stat-l">Services</div></div>
+          <div class="stat-box"><div class="stat-n">100%</div><div class="stat-l">Sur mesure</div></div>
+          <div class="stat-box"><div class="stat-n">7j/7</div><div class="stat-l">Disponible</div></div>
+          <div class="stat-box"><div class="stat-n">∞</div><div class="stat-l">Créativité</div></div>
+        </div>
+        <div class="big-initials">NS</div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <div class="sec-label">À propos</div>
+      <h2>Profil<br>Complet</h2>
+      <p style="margin-top:24px;">Passionné de technologie et de créativité, je propose des <strong style="color:var(--text);">solutions digitales complètes</strong> adaptées à chaque projet. Que vous ayez besoin d'un site web, d'un logo, d'une intervention technique ou d'une création musicale, j'apporte une réponse professionnelle et rapide.</p>
+      <p>Mon approche polyvalente me permet d'accompagner les <strong style="color:var(--text);">entrepreneurs, PME et particuliers</strong> dans leur transformation numérique, de la conception à la mise en œuvre.</p>
+      <div class="skills-grid">
+        <div class="skill-chip">Développement Web</div>
+        <div class="skill-chip">Design UI/UX</div>
+        <div class="skill-chip">Identité de marque</div>
+        <div class="skill-chip">Montage vidéo</div>
+        <div class="skill-chip">Admin systèmes</div>
+        <div class="skill-chip">Réseau & Wi-Fi</div>
+        <div class="skill-chip">FL Studio</div>
+        <div class="skill-chip">Dépannage hardware</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="srv-header reveal">
+    <div>
+      <div class="sec-label">Travaillons ensemble</div>
+      <h2>Me<br>Contacter</h2>
+    </div>
+    <p>Je réponds rapidement et suis disponible tous les jours pour vos projets.</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <p>Vous avez un projet ? Une panne ? Un besoin urgent ? Contactez-moi directement via WhatsApp ou email — je réponds dans la journée.</p>
+      <div class="contact-cards">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/261341391434?text=Bonjour%20Nomena%2C%20j'aimerais%20discuter%20d'un%20projet%20avec%20vous." target="_blank" rel="noopener" class="contact-card" style="--card-border:rgba(37,211,102,.3);">
+          <div class="cc-icon" style="background:rgba(37,211,102,.08);border-color:rgba(37,211,102,.2);font-size:24px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div>
+            <div class="cc-label">WhatsApp — Message direct</div>
+            <div class="cc-value">034 13 914 34</div>
+            <div class="cc-sub">Cliquez pour ouvrir WhatsApp directement</div>
+          </div>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:nomenamino79@gmail.com?subject=Demande%20de%20projet%20-%20Nomena%20Services&body=Bonjour%20Nomena%2C%0A%0AJe%20souhaite%20vous%20contacter%20pour%20un%20projet%20de%20%3A%0A%0A(d%C3%A9crivez%20votre%20besoin%20ici)%0A%0AMerci%20!" class="contact-card" style="--card-border:rgba(255,69,0,.3);">
+          <div class="cc-icon" style="background:rgba(255,69,0,.08);border-color:rgba(255,69,0,.2);font-size:24px;">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff4500" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          </div>
+          <div>
+            <div class="cc-label">Email — Message pré-rédigé</div>
+            <div class="cc-value">nomenamino79@gmail.com</div>
+            <div class="cc-sub">Cliquez pour ouvrir votre messagerie</div>
+          </div>
+        </a>
+
+        <!-- Téléphone -->
+        <a href="tel:+261341391434" class="contact-card" style="--card-border:rgba(0,212,255,.3);">
+          <div class="cc-icon" style="background:rgba(0,212,255,.08);border-color:rgba(0,212,255,.2);">📞</div>
+          <div>
+            <div class="cc-label">Téléphone</div>
+            <div class="cc-value">034 13 914 34</div>
+            <div class="cc-sub">Appel direct</div>
+          </div>
+        </a>
+
+        <!-- Localisation -->
+        <div class="contact-card" style="cursor:default;">
+          <div class="cc-icon">📍</div>
+          <div>
+            <div class="cc-label">Localisation · Disponibilité</div>
+            <div class="cc-value">Madagascar</div>
+            <div class="cc-sub">Ouvert tous les jours • 7j/7</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="form-wrap reveal">
+      <div class="form-row">
+        <div class="fg"><label class="fl">Votre nom</label><input type="text" class="fi" placeholder="Ex : Jean Rakoto"></div>
+        <div class="fg"><label class="fl">Votre email</label><input type="email" class="fi" placeholder="votre@email.com"></div>
+      </div>
+      <div class="fg"><label class="fl">Votre numéro (optionnel)</label><input type="tel" class="fi" placeholder="+261 XX XXX XXX"></div>
+      <div class="fg"><label class="fl">Type de service</label>
+        <select class="fi" style="cursor:pointer;">
+          <option value="">— Choisissez un service —</option>
+          <option>Développement Web</option>
+          <option>Design Graphique / Logo</option>
+          <option>Montage Vidéo</option>
+          <option>Maintenance Informatique</option>
+          <option>Installation Réseau / Systèmes</option>
+          <option>FL Studio / Musique</option>
+          <option>Pack Complet</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="fg"><label class="fl">Votre message</label><textarea class="ft" placeholder="Décrivez votre projet ou votre besoin en détail..."></textarea></div>
+      <div class="form-btns">
+        <button class="btn btn-primary" onclick="submitForm(this)">Envoyer le message</button>
+        <a href="https://wa.me/261341391434?text=Bonjour%20Nomena%2C%20j'ai%20un%20projet%20%C3%A0%20vous%20proposer." class="btn btn-green" target="_blank" rel="noopener">Via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-brand">Nomena<span>.</span>Services</div>
+  <div class="foot-copy">© 2025 Nomena Services · Madagascar · Ouvert 7j/7</div>
+  <div class="foot-links">
+    <a href="#services">Services</a>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal-box">
+    <div class="modal-close"><button class="modal-close-btn" onclick="closeModal(null,true)">✕</button></div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// CURSOR
+const cur=document.getElementById('cur'),cur2=document.getElementById('cur2');
+let mx=0,my=0,fx=0,fy=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  cur.style.left=mx+'px';cur.style.top=my+'px';
+});
+(function anim(){fx+=(mx-fx)*.1;fy+=(my-fy)*.1;cur2.style.left=fx+'px';cur2.style.top=fy+'px';requestAnimationFrame(anim);})();
+document.querySelectorAll('a,button,.srv-card,.contact-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width='20px';cur.style.height='20px';cur2.style.transform='translate(-50%,-50%) scale(1.4)';});
+  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';cur2.style.transform='translate(-50%,-50%) scale(1)';});
+});
+
+// SCROLL BAR
+window.addEventListener('scroll',()=>{
+  const p=window.scrollY/(document.documentElement.scrollHeight-window.innerHeight);
+  document.getElementById('sb').style.width=(p*100)+'%';
+});
+
+// REVEAL
+const revEls=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(entries=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting){setTimeout(()=>e.target.classList.add('on'),i*70);io.unobserve(e.target);}
+  });
+},{threshold:.08});
+revEls.forEach(el=>io.observe(el));
+
+// FORM
+function submitForm(btn){
+  btn.textContent='✓ Envoyé !';btn.style.background='#22c55e';
+  setTimeout(()=>{btn.textContent='Envoyer le message';btn.style.background='var(--accent)';},3000);
+}
+
+// MODAL DATA
+const modals={
+  web:{
+    color:'#ff4500',icon:'💻',num:'01',
+    title:'Développement Web & Applications',
+    desc:'Je crée des sites web et applications modernes, rapides et adaptés à tous les écrans. Du site vitrine à l\'e-commerce, chaque projet est conçu sur mesure selon vos besoins et votre budget.',
+    items:[
+      'Sites vitrines professionnels et portfolios',
+      'Boutiques e-commerce avec système de paiement',
+      'Applications web sur mesure (gestion, réservation, catalogue)',
+      'Intégration WordPress, Woocommerce, Elementor',
+      'Optimisation SEO et performance (Google)',
+      'Maintenance et mise à jour de sites existants',
+    ],
+    tags:['HTML/CSS','JavaScript','PHP','WordPress','WooCommerce','MySQL','React','API REST'],
+    cta_wa:'Devis site web',cta_mail:'Demande site web'
+  },
+  design:{
+    color:'#a855f7',icon:'🎨',num:'02',
+    title:'Design Graphique & Identité Visuelle',
+    desc:'Votre image de marque est votre première impression. Je crée des identités visuelles fortes et mémorables — logos, chartes graphiques, supports print et digital — qui reflètent parfaitement votre activité.',
+    items:[
+      'Création de logo professionnel (3 propositions)',
+      'Charte graphique complète (couleurs, polices, règles)',
+      'Cartes de visite, flyers, affiches',
+      'Bannières et visuels pour réseaux sociaux',
+      'Mockups et présentations produit',
+      'Retouche et traitement d\'images',
+    ],
+    tags:['Adobe Photoshop','Illustrator','InDesign','Logo','Branding','Print','Social Media'],
+    cta_wa:'Devis design',cta_mail:'Demande logo'
+  },
+  video:{
+    color:'#f59e0b',icon:'🎬',num:'03',
+    title:'Montage & Création Vidéo',
+    desc:'Des vidéos qui captivent votre audience. Du montage simple à la création avec effets visuels, je réalise des contenus vidéo professionnels pour vos réseaux sociaux, publicités ou présentations.',
+    items:[
+      'Montage vidéo professionnel (reels, YouTube, Facebook)',
+      'Intro et outro animés avec votre logo',
+      'Motion design et animations texte',
+      'Publicités vidéo pour réseaux sociaux',
+      'Sous-titres et habillage graphique',
+      'Colorimétrie et étalonnage',
+    ],
+    tags:['Adobe Premiere Pro','After Effects','CapCut','Motion Design','Reels','YouTube','Pub'],
+    cta_wa:'Devis vidéo',cta_mail:'Demande montage'
+  },
+  maintenance:{
+    color:'#22c55e',icon:'🖥️',num:'04',
+    title:'Maintenance & Dépannage Informatique',
+    desc:'Votre ordinateur est lent, planté ou infecté ? J\'interviens rapidement pour diagnostiquer et résoudre tout problème informatique — à domicile ou à distance — pour particuliers et professionnels.',
+    items:[
+      'Diagnostic complet du matériel et logiciels',
+      'Suppression virus, malwares et nettoyage',
+      'Optimisation et accélération du PC',
+      'Récupération de données perdues',
+      'Changement de disque dur / SSD, RAM',
+      'Assistance à distance via TeamViewer',
+    ],
+    tags:['Windows','Antivirus','Nettoyage','SSD/HDD','Récupération données','Remote','Hardware'],
+    cta_wa:'Urgence dépannage',cta_mail:'Demande maintenance'
+  },
+  reseau:{
+    color:'#00d4ff',icon:'🌐',num:'05',
+    title:'Réseau, Wi-Fi & Installation Systèmes',
+    desc:'Configuration réseau domestique ou professionnel, installation de systèmes d\'exploitation Windows et Linux, mise en place d\'environnements stables, sécurisés et performants.',
+    items:[
+      'Installation et configuration Wi-Fi / routeurs',
+      'Mise en place de réseau local (LAN)',
+      'Installation Windows 10/11 (légal ou OEM)',
+      'Installation et configuration Linux (Ubuntu, Mint…)',
+      'Dual boot Windows + Linux',
+      'Configuration pare-feu et sécurité réseau',
+    ],
+    tags:['Wi-Fi','Router','LAN','Windows 11','Ubuntu','Linux Mint','Sécurité','VPN'],
+    cta_wa:'Config réseau',cta_mail:'Demande réseau'
+  },
+  fl:{
+    color:'#ec4899',icon:'🎵',num:'06',
+    title:'FL Studio & Création Musicale',
+    desc:'Passionné de musique digitale, je crée des instruments VST, des beats et des productions musicales complètes sur FL Studio. Idéal pour artistes, créateurs de contenu et productions audiovisuelles.',
+    items:[
+      'Création d\'instruments et presets FL Studio',
+      'Beatmaking : trap, afro, pop, electronic',
+      'Production musicale complète (arrangements)',
+      'Mixage et mastering de base',
+      'Jingles et musiques pour publicités vidéo',
+      'Cours et formation FL Studio débutants',
+    ],
+    tags:['FL Studio','VST','Beatmaking','Trap','Afro','Production','Mixage','Mastering'],
+    cta_wa:'Commande beat',cta_mail:'Demande FL Studio'
+  },
+  pack:{
+    color:'#ff4500',icon:'🚀',num:'07',
+    title:'Pack Complet — Lancement Digital',
+    desc:'Vous lancez votre activité ? Ce pack clé en main vous donne tout ce qu\'il faut pour une présence digitale professionnelle et percutante dès le premier jour. Solution économique et rapide.',
+    items:[
+      'Site web vitrine complet (5 pages)',
+      'Logo professionnel + charte graphique',
+      'Carte de visite recto/verso',
+      'Photos de profil & bannières réseaux sociaux',
+      'Hébergement et mise en ligne sur GitHub Pages',
+      'Support et modifications pendant 30 jours',
+    ],
+    tags:['Site Web','Logo','Carte de visite','Réseaux sociaux','Hébergement','Support','Clé en main'],
+    cta_wa:'Devis pack complet',cta_mail:'Demande pack'
+  }
+};
+
+function openModal(id){
+  const d=modals[id];if(!d)return;
+  const body=document.getElementById('modal-body');
+  body.innerHTML=`
+    <div class="modal-accent-bar" style="--modal-color:${d.color};"></div>
+    <div class="modal-icon">${d.icon}</div>
+    <div style="font-family:var(--font-m);font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:${d.color};margin-bottom:8px;">Service ${d.num}</div>
+    <h3>${d.title}</h3>
+    <p class="modal-desc">${d.desc}</p>
+    <div class="modal-section-title">Ce que j'inclus</div>
+    <div class="modal-list">
+      ${d.items.map(i=>`<div class="modal-list-item"><div class="modal-bullet" style="background:${d.color}18;border-color:${d.color}40;color:${d.color};">✓</div><span>${i}</span></div>`).join('')}
+    </div>
+    <div class="modal-section-title">Technologies & outils</div>
+    <div class="modal-tags">${d.tags.map(t=>`<span class="modal-tag">${t}</span>`).join('')}</div>
+    <div class="modal-cta">
+      <a href="https://wa.me/261341391434?text=Bonjour%20Nomena%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service%20%3A%20${encodeURIComponent(d.cta_wa)}" target="_blank" rel="noopener" class="btn btn-green">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Direct
+      </a>
+      <a href="mailto:nomenamino79@gmail.com?subject=${encodeURIComponent(d.cta_mail + ' - Nomena Services')}&body=Bonjour%20Nomena%2C%0A%0AJe%20suis%20int%C3%A9ress%C3%A9%20par%20votre%20service%20%22${encodeURIComponent(d.title)}%22.%0A%0AMon%20besoin%20%3A%0A%0AMerci%20!" class="btn btn-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        Email Direct
+      </a>
+    </div>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeModal(e,force){
+  if(force||e&&e.target===document.getElementById('modal-overlay')){
+    document.getElementById('modal-overlay').classList.remove('open');
+    document.body.style.overflow='';
+  }
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal(null,true);});
+</script>
+</body>
+</html>
